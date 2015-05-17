@@ -20,6 +20,8 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
 
+#For loading secure info
+gem "figaro"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
