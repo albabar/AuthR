@@ -64,3 +64,6 @@ group :development, :test do
   gem 'capistrano3-puma',   require: false
 end
 
+group :production do
+  gem 'puma'
+end
