@@ -25,5 +25,6 @@ module Authr
 
     config.stripe.secret_key = ENV["stripe_secret"]
     config.stripe.publishable_key = ENV["stripe_pub"]
+    config.stripe.endpoint = '/payment'
   end
 end
