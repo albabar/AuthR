@@ -1,3 +1,6 @@
-%h1 Pages#premium
-%p Find me in app/views/pages/premium.html.haml
-%p= inspire
+%h1 Be Inspired
+
+- if current_user.paid?
+  %h3= inspire
+- else
+  %h3 Please buy me a coffee and get motivated!

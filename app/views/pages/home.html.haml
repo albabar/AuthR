@@ -1,2 +1,10 @@
-%h1 Pages#home
-%p Find me in app/views/pages/home.html.haml
+%h1 Welcome
+
+- if user_signed_in?
+  - if current_user.twitter_user?
+    Twitter User
+  - else
+    Normal User
+  please go to premium to get more info.
+- else
+  Guest, please Login.

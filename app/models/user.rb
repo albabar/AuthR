@@ -21,4 +21,8 @@ class User < ActiveRecord::Base
   def paid?
     'paid' == customer
   end
+
+  def twitter_user?
+    'twitter' == provider
+  end
 end
