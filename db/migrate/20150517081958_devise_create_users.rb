@@ -34,7 +34,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :provider
       t.string :access_token
       t.string :uid
-      t.string :access_token
+      t.string :twitter_secret
 
       t.timestamps
     end
