@@ -7,7 +7,9 @@
     Normal User
   please go to premium to get more info.
 - else
-  Guest, please Login.
+  Guest, please
+  = link_to 'Login', new_user_session_path
+  .
 
 - if user_signed_in? && !current_user.paid?
   %h3 Please buy me a coffee and get motivated!
