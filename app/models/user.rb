@@ -13,8 +13,12 @@ class User < ActiveRecord::Base
       user.access_token = auth.credentials.token
       user.twitter_secret = auth.credentials.secret
       user.email = auth.extra.access_token.params[:user_id].to_s + "@twitter.com"
-      # user.password = user.encrypted_password = Devise.friendly_token[0,20]
       user.password= Devise.friendly_token[0,20]
     end
+  end
+
+  # Check user Payment status
+  def paid?
+    'paid' == customer
   end
 end

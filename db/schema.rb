@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20150517081958) do
     t.string   "access_token"
     t.string   "uid"
     t.string   "twitter_secret"
+    t.string   "customer"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
