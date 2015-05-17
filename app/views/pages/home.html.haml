@@ -8,3 +8,7 @@
   please go to premium to get more info.
 - else
   Guest, please Login.
+
+- if user_signed_in? && !current_user.paid?
+  %h3 Please buy me a coffee and get motivated!
+  = render 'charges/form'

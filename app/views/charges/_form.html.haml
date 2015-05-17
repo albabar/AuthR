@@ -1,0 +1,6 @@
+= form_tag charges_path do
+  %article
+    %p Card Number: 4242 4242 4242 4242
+    %label.amount
+      %span Amount: $2.00
+  %script.stripe-button{"data-email" => current_user.email, "data-amount" => "200", "data-description" => "A sip of Motivation", "data-key" => "#{Rails.configuration.stripe[:publishable_key]}", :src => "https://checkout.stripe.com/checkout.js"}
