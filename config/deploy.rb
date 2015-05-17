@@ -1,6 +1,7 @@
 # Change these
-server 'ruby.ibabar.com', port: 6395, roles: [:web, :app, :db], primary: true
+server 'Ruby', port: 6395, roles: [:web, :app, :db], primary: true
 
+set :ssh_options, {:forward_agent => true}
 set :repo_url,        'git@github.com:albabar/AuthR.git'
 set :application,     'AuthR'
 set :user,            'babar'
